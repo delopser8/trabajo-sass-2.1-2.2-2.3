@@ -1,0 +1,122 @@
+/*Sergio*/
+@keyframes iluminar {
+    from{
+        background-color: #666;
+        color: #eee;
+    }  
+    to{
+        background-color: #888;
+        color: #fff;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    padding: 12px 30px;
+    font-size: 1.8em;
+    background-color: #eee;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+
+/*Paula*/
+nav {
+    position: absolute;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav > ul {
+    width: 100%;
+    height: 32px;
+    color: #eee;
+    background-color: #666;
+}
+
+nav ul li.categoria {
+    float: left;
+}
+
+nav a {
+    color: #eee;
+    background-color: #666;
+    text-decoration: none;
+    width: 160px;
+    padding: 7px 20px;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+
+nav a:hover{
+    color: #fff;
+    background-color: #888;
+    -moz-animation: iluminar 0.4s linear;
+    -webkit-animation: iluminar 0.4s linear;
+    animation: iluminar 0.4s linear;
+}
+
+ul.submenu{
+    -moz-transition-property: height;
+    -moz-transition-timing-function: linear;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-property: height;
+    -webkit-transition-timing-function: linear;
+    -webkit-transition-duration: 0.5s;
+    transition-property: height;
+    transition-timing-function: linear;
+    transition-duration: 0.5s;
+
+    position: absolute;
+    height: 0;
+    overflow: hidden;
+}
+
+li.categoria a{
+    -moz-transition-property: padding;
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 0.5s;
+    -webkit-transition-property: padding;
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 0.5s;
+    transition-property: padding;
+    transition-timing-function: ease-out;
+    transition-duration: 0.5s;
+}
+
+li.categoria:hover a {
+    padding: 10px 20px;
+}
+
+li.categoria:hover ul {
+    height: 110px;
+}
+
+
+footer{
+    color: #eee;
+    background-color: #666;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 0;
+}
+

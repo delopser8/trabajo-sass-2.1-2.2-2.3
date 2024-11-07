@@ -1,0 +1,34 @@
+$text-color: #eee;
+$text-color-hover: #fff;
+$bg-color: #666;
+$bg-color-hover: #888;
+
+@mixin bg-color() {
+  color: $text-color;
+  background-color: $bg-color;
+}
+
+@mixin bg-color-hover() {
+  &:hover {
+    color: $text-color-hover;
+    background-color: $bg-color-hover;
+  }
+}
+
+@mixin box($val) {
+  box-sizing: $val;
+  -webkit-box-sizing: $val;
+  -moz-box-sizing: $val;
+}
+
+@mixin transition($prop, $dur, $timing: linear) {
+  -moz-transition: $prop $dur $timing;
+  -webkit-transition: $prop $dur $timing;
+  transition: $prop $dur $timing;
+}
+
+@mixin animation($name, $dur, $timing: linear) {
+  -moz-animation: $name $dur $timing;
+  -webkit-animation: $name $dur $timing;
+  animation: $name $dur $timing;
+}
