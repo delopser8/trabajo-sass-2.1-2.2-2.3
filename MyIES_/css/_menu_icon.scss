@@ -1,0 +1,33 @@
+.menu-icon{
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+#menu-toggle{
+        display: none;
+    }
+
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+
+    #menu-toggle:not(:checked) ~ ul{
+        display: none;
+    }
+
+    #menu-toggle:checked ~ ul{
+        display: block;
+    }
+
+    #menu-toggle:checked ~ ul li.categoria{
+        display: block;
+        float: none;
+    }
+
+    #menu-toggle:checked ~ ul .categoria ul.submenu{
+        display: none;
+    }
+
+}
