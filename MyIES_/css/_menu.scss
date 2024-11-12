@@ -32,17 +32,6 @@ body {
       margin: 0;
       .submenu {
         @include transition(height, 0.5s);
-        // #region
-        // -moz-transition-property: height;
-        // -moz-transition-timing-function: linear;
-        // -moz-transition-duration: 0.5s;
-        // -webkit-transition-property: height;
-        // -webkit-transition-timing-function: linear;
-        // -webkit-transition-duration: 0.5s;
-        // transition-property: height;
-        // transition-timing-function: linear;
-        // transition-duration: 0.5s;
-        // #endregion
         position: absolute;
         height: 0px;
         overflow: hidden;
@@ -51,17 +40,6 @@ body {
         float: left;
         a {
           @include transition(padding, 0.5s, ease-out);
-          // #region
-          // -moz-transition-property: padding;
-          // -moz-transition-timing-function: ease-out;
-          // -moz-transition-duration: 0.5s;
-          // -webkit-transition-property: padding;
-          // -webkit-transition-timing-function: ease-out;
-          // -webkit-transition-duration: 0.5s;
-          // transition-property: padding;
-          // transition-timing-function: ease-out;
-          // transition-duration: 0.5s;
-          // #endregion
         }
         &:hover a {
           padding: 10px 20px;
@@ -75,19 +53,10 @@ body {
       @include bg-color();
       width: 100%;
       height: 32px;
-      // #region
-      //color: #eee;
-      //background-color: #666;
-      // #endregion
     }
     a {
       @include bg-color();
       @include bg-color-hover();
-      // #region
-      //color: #eee;
-      //background-color: #666;
-      //@include animation(iluminar,0.4s);
-      // #endregion
       text-decoration: none;
       width: 160px;
       padding: 7px 20px;
@@ -96,13 +65,6 @@ body {
       cursor: pointer;
       &:hover {
         @include animation(iluminar, 0.4s);
-        // #region
-        // color: #fff;
-        // background-color: #888;
-        // -moz-animation: iluminar 0.4s linear;
-        // -webkit-animation: iluminar 0.4s linear;
-        // animation: iluminar 0.4s linear;
-        // #endregion
       }
     }
   }
